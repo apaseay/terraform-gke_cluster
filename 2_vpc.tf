@@ -58,7 +58,7 @@ resource "google_compute_address" "nat" {
 
 # Create a firewall rule to allow SSH
 resource "google_compute_firewall" "allow-ssh" {
-  name    = "allow-ssh"
+  name    = "allow-ssh-from-apase"
   network = google_compute_network.main.name
 
   allow {
